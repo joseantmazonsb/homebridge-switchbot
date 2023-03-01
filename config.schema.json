@@ -1,15 +1,69 @@
 {
-  "pluginAlias": "ExampleHomebridgePlugin",
+  "pluginAlias": "Homebridge Switchbot",
   "pluginType": "platform",
   "singular": true,
   "schema": {
     "type": "object",
     "properties": {
-      "name": {
-        "title": "Name",
-        "type": "string",
-        "required": true,
-        "default": "Example Dynamic Platform"
+      "settings": {
+        "title": "Settings",
+        "type": "object",
+        "properties": {
+          "api": {
+            "title": "API",
+            "type": "object",
+            "properties": {
+              "url": {
+                "title": "API URL",
+                "type": "string",
+                "required": true,
+                "default": "https://api.switch-bot.com/v1.1"
+              },
+              "token": {
+                "title": "Authentication token",
+                "type": "string",
+                "required": true,
+                "description": "Authentication token needed to access the API."
+              },
+              "secret": {
+                "title": "Secret key",
+                "type": "string",
+                "required": true,
+                "description": "Secret key needed in conjunction to the authentication token to access the API."
+              }
+            }
+          }
+        },
+        "overrides": {
+          "title": "Overrides",
+          "type": "object",
+          "description": "Configuration overrides",
+          "properties": {
+            "thermostats": {
+              "title": "Thermostats",
+              "type": "object",
+              "description": "Thermostats overrides",
+              "properties": {
+                "all": {
+                  "title": "Global",
+                  "type": "object",
+                  "description": "Overrides that apply for all thermostats",
+                  "properties": {
+                    "autoOperationMode": {
+                      "title": "Operation mode AUTO",
+                      "type": "string",
+                      "description": "Instruct the thermostat to heat or cool whenever AUTO is selected. This could be useful for air conditioners that do not provide an automatic mode.",
+                      "oneOf": [
+                        {"title": "Heat", "enum": ["heat"]},
+                        {"title": "Cool", "enum": ["cool"]}
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
