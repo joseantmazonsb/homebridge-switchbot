@@ -2,7 +2,7 @@
   "private": true,
   "displayName": "Homebridge Switchbot Reloaded",
   "name": "@joseantmazon/homebridge-switchbot",
-  "version": "1.0.0",
+  "version": "1.0.1-beta.0",
   "description": "Link your switchbot devices to homebridge!",
   "license": "Apache-2.0",
   "author": {
@@ -27,7 +27,12 @@
     "prepublishOnly": "npm run lint && npm run build"
   },
   "keywords": [
-    "homebridge-plugin", "switchbot", "homekit", "meter", "tv", "thermostat"
+    "homebridge-plugin",
+    "switchbot",
+    "homekit",
+    "meter",
+    "tv",
+    "thermostat"
   ],
   "dependencies": {
     "node-fetch": "^2.6.9"
