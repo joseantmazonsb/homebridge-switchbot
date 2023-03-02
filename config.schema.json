@@ -1,5 +1,5 @@
 {
-  "pluginAlias": "Homebridge Switchbot",
+  "pluginAlias": "Homebridge Switchbot Reloaded",
   "pluginType": "platform",
   "singular": true,
   "schema": {
