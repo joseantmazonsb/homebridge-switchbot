@@ -1,5 +1,4 @@
 {
-  "private": true,
   "displayName": "Homebridge Switchbot Reloaded",
   "name": "@joseantmazon/homebridge-switchbot",
   "version": "1.0.1-beta.0",
@@ -10,10 +9,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/joseantmazon/homebridge-switchbot.git"
+    "url": "https://github.com/joseantmazonsb/homebridge-switchbot.git"
   },
   "bugs": {
-    "url": "https://github.com/joseantmazon/homebridge-switchbot/issues"
+    "url": "https://github.com/joseantmazonsb/homebridge-switchbot/issues"
   },
   "engines": {
     "node": ">=14.18.1",
