@@ -32,31 +32,31 @@
                 "description": "Secret key needed in conjunction to the authentication token to access the API."
               }
             }
-          }
-        },
-        "overrides": {
-          "title": "Overrides",
-          "type": "object",
-          "description": "Configuration overrides",
-          "properties": {
-            "thermostats": {
-              "title": "Thermostats",
-              "type": "object",
-              "description": "Thermostats overrides",
-              "properties": {
-                "all": {
-                  "title": "Global",
-                  "type": "object",
-                  "description": "Overrides that apply for all thermostats",
-                  "properties": {
-                    "autoOperationMode": {
-                      "title": "Operation mode AUTO",
-                      "type": "string",
-                      "description": "Instruct the thermostat to heat or cool whenever AUTO is selected. This could be useful for air conditioners that do not provide an automatic mode.",
-                      "oneOf": [
-                        {"title": "Heat", "enum": ["heat"]},
-                        {"title": "Cool", "enum": ["cool"]}
-                      ]
+          },
+          "overrides": {
+            "title": "Overrides",
+            "type": "object",
+            "description": "Configuration overrides",
+            "properties": {
+              "thermostats": {
+                "title": "Thermostats",
+                "type": "object",
+                "description": "Thermostats overrides",
+                "properties": {
+                  "all": {
+                    "title": "Global",
+                    "type": "object",
+                    "description": "Overrides that apply for all thermostats",
+                    "properties": {
+                      "autoOperationMode": {
+                        "title": "Operation mode AUTO",
+                        "type": "string",
+                        "description": "Instruct the thermostat to heat or cool whenever AUTO is selected. This could be useful for air conditioners that do not provide an automatic mode.",
+                        "oneOf": [
+                          {"title": "Heat", "enum": ["heat"]},
+                          {"title": "Cool", "enum": ["cool"]}
+                        ]
+                      }
                     }
                   }
                 }
