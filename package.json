@@ -1,7 +1,7 @@
 {
   "displayName": "Homebridge Switchbot Reloaded",
   "name": "@joseantmazon/homebridge-switchbot",
-  "version": "1.0.1-beta.0",
+  "version": "1.0.0-beta.1",
   "description": "Link your switchbot devices to homebridge!",
   "license": "Apache-2.0",
   "author": {
