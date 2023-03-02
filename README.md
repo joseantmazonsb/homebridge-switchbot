@@ -1,17 +1,6 @@
 # Homebridge Switchbot Reloaded
 
-<span style="display:flex; flex-direction: row; gap: 0.5em">
-<span>
-
-[![npm version](https://badgen.net/npm/v/@joseantmazon/homebridge-switchbot)](https://www.npmjs.com/package/@joseantmazon/homebridge-switchbot)
-
-</span>
-<span>
-
-[![npm downloads](https://badgen.net/npm/dt/@joseantmazon/homebridge-switchbot)](https://www.npmjs.com/package/@joseantmazon/homebridge-switchbot)
-
-</span>
-</span>
+[![npm version](https://badgen.net/npm/v/@joseantmazon/homebridge-switchbot)](https://www.npmjs.com/package/@joseantmazon/homebridge-switchbot) [![npm downloads](https://badgen.net/npm/dt/@joseantmazon/homebridge-switchbot)](https://www.npmjs.com/package/@joseantmazon/homebridge-switchbot)
 
 **SwitchBot meets Homekit!** This plugins uses **SwitchBot's Open API** to connect your devices to Homekit through Homebridge. 
 
