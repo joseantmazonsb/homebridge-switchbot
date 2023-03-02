@@ -2,7 +2,7 @@
 
 **Contributions are encouraged and welcome.** Here you'll find some useful information.
 
-## Reporting bugs
+## Reporting bugs
 
 Create a new Github issue explaining the details of the bug and how to reproduce it. If you feel confident enough, you may submit a pull request with the proposed fix as well.
 
