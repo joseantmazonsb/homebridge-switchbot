@@ -3,12 +3,12 @@
 <span style="display:flex; flex-direction: row; gap: 0.5em">
 <span>
 
-[![npm version](https://badgen.net/npm/v/@joseantmazon/homebridge-switchbot)](https://www.npmjs.com/package/@switchbot/homebridge-switchbot)
+[![npm version](https://badgen.net/npm/v/@joseantmazon/homebridge-switchbot)](https://www.npmjs.com/package/@joseantmazon/homebridge-switchbot)
 
 </span>
 <span>
 
-[![npm downloads](https://badgen.net/npm/dt/@joseantmazon/homebridge-switchbot)](https://www.npmjs.com/package/@switchbot/homebridge-switchbot)
+[![npm downloads](https://badgen.net/npm/dt/@joseantmazon/homebridge-switchbot)](https://www.npmjs.com/package/@joseantmazon/homebridge-switchbot)
 
 </span>
 </span>
@@ -118,6 +118,6 @@ Your homebridge config file would look similar to this afterwards:
 
 Do you want to take part in the development? Please, head to [CONTRIBUTING](./CONTRIBUTING.md) to get started.
 
-## Disclaimer
+## Disclaimer
 
 The motivation for this plugin was to improve [@switchbot/homebridge-switchbot](https://github.com/OpenWonderLabs/homebridge-switchbot) for my personal use case. Therefore, support for other devices is not guaranteed and it will highly depend on contributions, which are more than welcome.
