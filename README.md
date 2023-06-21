@@ -46,6 +46,8 @@ Your homebridge config file would look similar to this afterwards:
 
 ## Supported IR devices
 
+*Bear in mind that **Switchbot's API does not allow to query the status of IR devices** and therefore I may only provide a best effort approach by storing the result of the most recent operation. Hence, operating infrared devices by means other than this plugin may result in an inaccurate display of information through Homebridge.*
+
 ### TV/DIY TV
 
 **Capabilities**
