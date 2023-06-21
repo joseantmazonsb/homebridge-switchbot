@@ -5,7 +5,7 @@ export type PlatformSettings = {
     secret: string;
   };
   overrides?: {
-    thermostats?: Record<string, unknown>;
+    thermostats?: Record<string, {autoOperationMode: string}>;
   };
 };
 

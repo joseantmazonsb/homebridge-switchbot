@@ -23,9 +23,11 @@ export class SwitchbotAirConditionerAccessory extends SwitchbotCommandableAccess
   private temperature = 24;
   private rotationSpeed = 50;
 
-  private autoOperationMode = '';
+  private autoOperationMode: string | undefined;
 
   overrideOperationMode() {
+    this.debug('Verifying override rules...');
+    this.debug(`autoOperationMode=${this.autoOperationMode ?? 'none'}`);
     if (this.autoOperationMode === 'heat') {
       this.debug('Override to HEAT');
       this.mode = 5;
@@ -41,15 +43,10 @@ export class SwitchbotAirConditionerAccessory extends SwitchbotCommandableAccess
     if (!overrides) {
       return;
     }
-    let value = (overrides[id] as Record<string, string>)?.autoOperationMode;
-    if (value) {
-      this.autoOperationMode = value;
-      return;
-    }
-    value = (overrides.all as Record<string, string>)?.autoOperationMode;
-    if (value) {
-      this.autoOperationMode = value;
-    }
+    this.debug(`Overrides: ${JSON.stringify(overrides)}`);
+    this.autoOperationMode = overrides[id]?.autoOperationMode
+      ?? overrides.all?.autoOperationMode
+      ?? '';
   }
 
   initialize(): void {
@@ -220,7 +217,8 @@ export class SwitchbotAirConditionerAccessory extends SwitchbotCommandableAccess
   }
 
   async setAll() {
-    const cmd = { name: 'setAll', parameter: `${this.temperature},${this.mode},${this.fanSpeed},${this.state}` };
+    const parameter = [this.temperature, this.mode, this.fanSpeed, this.state].join(',');
+    const cmd = { name: 'setAll', parameter };
     const result = await this.commandService.sendCommand(cmd, this.accessory.device.deviceId);
     this.debug(JSON.stringify(result));
     return result;
